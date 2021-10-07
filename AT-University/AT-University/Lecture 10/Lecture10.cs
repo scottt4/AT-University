@@ -19,7 +19,7 @@ namespace AT_University
         }
 
         [TestMethod]
-        public void FindElementByDifferentMethods()
+        public void PrintingLinks()
         {
             _driver.Navigate().GoToUrl(_url);
             var searchBox = _driver.FindElement(By.TagName("input"));
@@ -33,7 +33,7 @@ namespace AT_University
                 for (int i = 0; i < 10; i++)
                 {
                     Console.WriteLine(links[i]);
-                    System.Diagnostics.Debug.WriteLine(links[i].);
+                    System.Diagnostics.Debug.WriteLine(links[i].Text);
                 }
             }
             catch
